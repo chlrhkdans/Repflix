@@ -12,6 +12,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.Builder.Default;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,7 +26,7 @@ public class UserEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(nullable = false)
+	@Column(nullable = false, name="USER_ID")
 	private Integer id;
 	
 	
@@ -39,7 +40,6 @@ public class UserEntity {
 	private String password;
 	
 	@Column(nullable = false)
-	@ColumnDefault("ROLE_USER")
 	private String role;
 	
 	@CreationTimestamp
@@ -54,4 +54,6 @@ public class UserEntity {
 	
 	@Column(nullable = false)
 	private Boolean gender;
+	
+	
 }
