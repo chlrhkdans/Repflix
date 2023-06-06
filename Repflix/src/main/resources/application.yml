@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://dhkdckddl.cafe24.com:3306/dhkdckddl
+    username: dhkdckddl
+    password: qudtls12!!
+    driver-class-name: org.mariadb.jdbc.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
