@@ -20,7 +20,7 @@ public class GenreEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(nullable = false)
+	@Column(nullable = false, name="genreId")
 	private Integer id;
 	
 	@Column(nullable = false)

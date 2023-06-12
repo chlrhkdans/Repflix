@@ -22,7 +22,7 @@ public class ListEntity {
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
-	@Column(nullable = false)
+	@Column(nullable = false,name="listId")
 	private Integer id;
 	
 	@Column(nullable = false)
