@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -24,9 +26,11 @@ public class ListGenreEntity {
 	@Column(nullable = false)
 	private Integer id;
 	
-	@Column(nullable = false)
-	private Integer listId; 
+	@ManyToOne
+	@JoinColumn(name="genreId")
+	private GenreEntity genreEntity;
 	
-	@Column(nullable = false)
-	private Integer genreId;
+	@ManyToOne
+	@JoinColumn(name="listId")
+	private ListEntity listEntity;
 }

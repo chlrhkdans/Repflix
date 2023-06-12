@@ -29,6 +29,10 @@ public class ReplyEntity {
 	private String content;
 
 	@ManyToOne
-	@JoinColumn(name="USER_ID")
-	private UserEntity user;
+	@JoinColumn(name="userId")
+	private UserEntity userEntity;
+	
+	@ManyToOne
+	@JoinColumn(name="listId")
+	private ListEntity listEntity;
 }
