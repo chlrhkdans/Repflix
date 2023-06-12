@@ -28,6 +28,4 @@ public class GradeEntity {
 	@ColumnDefault("0")
 	@Column(nullable = false)
 	private Float grade;
-	
-	
 }

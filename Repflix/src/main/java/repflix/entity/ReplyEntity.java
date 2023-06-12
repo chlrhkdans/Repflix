@@ -25,10 +25,4 @@ public class ReplyEntity {
 	
 	@Column(nullable = false)
 	private String content;
-	
-	@Column(nullable = false)
-	private Integer userId;
-	
-	@Column(nullable = false)
-	private Integer listId;
 }

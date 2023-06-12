@@ -23,10 +23,5 @@ public class ListGenreEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false)
 	private Integer id;
-	
-	@Column(nullable = false)
-	private Integer listId; 
-	
-	@Column(nullable = false)
-	private Integer genreId;
+
 }
