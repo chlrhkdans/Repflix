@@ -1,8 +1,6 @@
 package repflix.entity;
 
-import java.time.LocalDateTime;
 
-import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -11,6 +9,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -37,18 +36,16 @@ public class UserEntity {
 	private String password;
 	
 	@Column(nullable = false)
-	private String role;
-	
-	@CreationTimestamp
-	@Column(nullable = false)
-	private LocalDateTime createDate;
-	
-	@Column(nullable = false)
 	private Integer phoneNumber;
 	
-	@Column
-	private Boolean withDrawal;
 	
+	@Builder
+	public UserEntity(String email, String username, String password, Integer phoneNumber) {
+		this.email=email;
+		this.username=username;
+		this.password=password;
+		this.phoneNumber=phoneNumber;
+	}
 	
 	
 	}
