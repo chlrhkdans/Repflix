@@ -15,8 +15,8 @@ public class SecurityConfig {
 		
 		http
 			.authorizeHttpRequests()
-			.requestMatchers("/sign/**").permitAll();
-		
+			.requestMatchers("/sign/**").permitAll()
+			.anyRequest().permitAll();
 		http
 			.formLogin()
 			.loginPage("/sign/signin");
