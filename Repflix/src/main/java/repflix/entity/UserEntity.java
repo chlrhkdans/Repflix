@@ -47,6 +47,5 @@ public class UserEntity {
 		this.phoneNumber=phoneNumber;
 	}
 	
-	
-	}
+}
 
