@@ -1,5 +1,5 @@
 package repflix.dto;
 
-public class listDTO {
+public class ListDTO {
 
 }

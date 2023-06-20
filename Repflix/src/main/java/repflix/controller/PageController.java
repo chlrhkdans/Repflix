@@ -12,4 +12,11 @@ public class PageController {
 		
 		return "sign/signin";
 	}
+	
+	//회원가입 페이지
+	@GetMapping("/sign/signup")
+	public String signup() {
+		
+		return "sign/signup";
+	}
 }
