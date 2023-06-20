@@ -1,5 +1,5 @@
 # Repflix
-Port-folio
+Portfolio
 
 # 커밋 컨벤션
 Add - 새로운 모듈이나 파일, 폴더가 추가되었을 때
