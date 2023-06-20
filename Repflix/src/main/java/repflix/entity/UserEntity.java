@@ -2,7 +2,6 @@ package repflix.entity;
 
 import java.time.LocalDateTime;
 
-import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
@@ -12,8 +11,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import lombok.Builder.Default;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -34,7 +31,7 @@ public class UserEntity {
 	private String email;
 	
 	@Column(unique = true, nullable = false)
-	private String name;
+	private String username;
 	
 	@Column(nullable = false)
 	private String password;
@@ -52,8 +49,7 @@ public class UserEntity {
 	@Column
 	private Boolean withDrawal;
 	
-	@Column(nullable = false)
-	private Boolean gender;
 	
 	
-}
+	}
+
