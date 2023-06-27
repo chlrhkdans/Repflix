@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<div th:fragment="header">
+		<header id="header">
+			<div class="flex">
+			<!-- 메인로고 -->
+				<div>
+					<a href="/" id="main-logo">REPFLIX</a>
+				</div>
+			<!-- 네비게이션 메뉴영역 -->	
+				<div id="nav">
+					<a href="#" class="navMenu">찜한 목록</a>
+				</div>
+					
+				<div>
+					<a href="#" class="navMenu">관리자 페이지</a>
+				</div>
+			<!-- 검색바 -->	
+				<div class="right">
+					<input type="text" placeholder="검색"  id="search-bar">
+				</div>
+			</div>
+		</header>
+	</div>
+</body>
+</html>
