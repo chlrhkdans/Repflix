@@ -1,10 +1,50 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
+<script type="text/javascript"src="js/sign/signup.js"></script>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>회원가입 페이지 입니다.</title>
 </head>
 <body>
+	<form action="/sign/signup" method="post">
+		<div>
+			<div>
+				<label  class="form-label">사용자 ID</label>
+			</div>
+			<div>
+				<input type="text" name="email" >
+			</div>
+		</div>
+		<div>
+			<div>
+				<label  class="form-label">이름</label>
+			</div>
+			<div>
+				<input type="text"  name="username" >
+			</div>
+		</div>
+		<div>
+			<div>
+				<label  class="form-label">비밀번호</label>
+			</div>
+			<div>
+				<input type="text"  name="password" >
+			</div>
+		</div>
+		<div>
+			<div>
+				<label  class="form-label">전화번호</label>
+			</div>
+			<div>
+				<input type="text" name="phoneNumber">
+			</div>
+		</div>
+		<div>
+			<div>
+				<button type="submit">회원가입</button>
+			</div>
+		</div>
+	</form>
 
 </body>
 </html>

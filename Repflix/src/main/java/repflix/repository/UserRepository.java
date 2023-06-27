@@ -1,5 +1,12 @@
 package repflix.repository;
 
-public interface UserRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import repflix.entity.UserEntity;
+
+@Repository
+public interface UserRepository extends JpaRepository<UserEntity, Integer>{
+
 
 }

@@ -20,7 +20,8 @@ public class SecurityConfig {
 		http
 			.formLogin()
 			.loginPage("/sign/signin");
-		
+		http
+			.csrf().disable();
 		return http.build();
 	}
 }
