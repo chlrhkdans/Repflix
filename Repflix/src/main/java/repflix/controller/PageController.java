@@ -12,4 +12,10 @@ public class PageController {
 		
 		return "sign/signin";
 	}
+	
+	//관리자 페이지
+	@GetMapping("/admin")
+	public String admin() {
+		return"admin/admin";
+	}
 }
